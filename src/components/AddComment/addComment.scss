@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/utilities" as *;
 
@@ -57,6 +58,12 @@
     width: 100%;
     resize: none;
 
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: 1px solid $BrainFlix-blue;
+    }
+
     &::placeholder {
       color: $BrainFlix-Black;
       font-weight: 600;
@@ -82,5 +89,38 @@
       $BrainFlix-DarkBlue;
     background-position: 0.75rem, left 70%;
     background-size: 1.25rem 1.25rem;
+  }
+
+  @include tablet {
+    padding: 1rem 2rem 0 2rem;
+
+    &__form-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__input-wrapper {
+      width: 64%;
+      margin-right: 1rem;
+      // height: 20px;
+    }
+
+    &__comment-field {
+      display: flex;
+      min-height: 0;
+      height: 45px;
+      overflow: hidden;
+      width: 100%;
+    }
+    &__btn-wrapper {
+      width: 30%;
+    }
+
+    &__submit-btn {
+      width: 100%;
+      margin-top: 1.7rem;
+    }
   }
 }

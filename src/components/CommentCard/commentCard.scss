@@ -1,3 +1,4 @@
+@use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/utilities" as *;
 // Comments Archieve
@@ -12,6 +13,8 @@
   }
 
   &__comment {
+    // border-top: 2px solid $Mercury;
+    // padding-top: 1rem;
     display: flex;
     // flex-direction: column;
     padding: 0;
@@ -53,5 +56,27 @@
     color: $Silver;
     text-align: right;
     font-weight: 600;
+  }
+
+  @include tablet {
+    padding: 1rem 2rem;
+
+    &__hr {
+      background: $Mercury;
+    }
+  }
+
+  @include desktop {
+    padding-right: 0;
+    // margin-right: 1.5rem;
+
+    &__hr {
+      margin-right: -1.5rem;
+      background: $Mercury;
+    }
+
+    &__comment {
+      padding-right: 1.5rem;
+    }
   }
 }

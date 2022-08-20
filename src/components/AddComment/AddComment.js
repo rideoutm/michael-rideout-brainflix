@@ -15,22 +15,25 @@ function AddComment() {
         />
 
         <form className="comments__form-container" action="URL" method="POST">
-          <label className="comments__form-label" for="comments">
-            JOIN THE CONVERSATION
-          </label>
-          <textarea
-            className="comments__comment-field"
-            id="comments"
-            type="text"
-            placeholder="Add a new comment"
-          ></textarea>
-
-          <input
-            type="submit"
-            className="comments__submit-btn"
-            value="COMMENT"
-            maxlength="40"
-          />
+          <div className="comments__input-wrapper">
+            <label className="comments__form-label" htmlFor="comments">
+              JOIN THE CONVERSATION
+              <textarea
+                className="comments__comment-field"
+                id="comments"
+                type="text"
+                placeholder="Add a new comment"
+              ></textarea>
+            </label>
+          </div>
+          <div className="comments__btn-wrapper">
+            <input
+              type="submit"
+              className="comments__submit-btn"
+              value="COMMENT"
+              maxlength="40"
+            />
+          </div>
         </form>
       </div>
     </section>

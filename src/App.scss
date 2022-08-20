@@ -2,6 +2,7 @@
 @use "./styles/partials/utilities.scss" as *;
 @use "./components/Header/header.scss" as *;
 @use "./components/MainVideo/mainVideo.scss" as *;
+@use "./styles/partials/mixins" as *;
 
 * {
   margin: 0;

@@ -1,11 +1,13 @@
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/utilities" as *;
+@use "../../styles/partials/mixins" as *;
 
 .main-video {
   width: 100%;
+
   &__video-control {
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
 }
 
@@ -16,10 +18,20 @@
     color: $BrainFlix-Black;
   }
 
-  &__divider {
+  &__divider-top,
+  &__divider-bottom {
     border: 1px solid $Mercury;
     background: $Mercury;
     margin: 1rem 0;
+  }
+
+  &__divider-bottom {
+    margin-top: 0;
+  }
+
+  &__main-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__info {
@@ -29,6 +41,8 @@
 
   &__author {
     color: $BrainFlix-Black;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   &__date,
@@ -39,7 +53,20 @@
   }
 
   &__views {
-    margin-top: -15px;
+    margin-top: -20px;
+    margin-right: 5px;
+  }
+
+  &__likes-container {
+    margin-top: 8px;
+  }
+
+  &__views-icon {
+    margin: 0 0.626rem -0.31rem 0;
+  }
+
+  &__likes-icon {
+    margin: 0 0.626rem -0.31rem 0;
   }
 
   &__views-icon,
@@ -50,5 +77,68 @@
 
   &__description {
     color: $BrainFlix-Black;
+  }
+
+  @include tablet {
+    padding: 1rem 2rem;
+
+    &__video-control {
+      max-height: 330px;
+      background: $BrainFlix-DarkBlack;
+      // max-width: 90%;
+    }
+    &__divider-top {
+      display: none;
+    }
+
+    &__info {
+      display: flex;
+      margin-top: 1rem;
+    }
+    &__date {
+      margin: 0 0 0 1rem;
+    }
+
+    &__author-info {
+      display: flex;
+      margin-top: 1rem;
+    }
+
+    &__userInfo {
+      display: flex;
+    }
+    &__views {
+      margin-top: 0;
+    }
+    &__likes-container {
+      margin: 0 0 0 1rem;
+    }
+  }
+
+  @include desktop {
+    width: 100%;
+
+    &__divider-bottom {
+      margin-right: -2rem;
+    }
+  }
+}
+
+@include desktop {
+  .main-section {
+    display: flex;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      margin-left: 7rem;
+      margin-top: 1.5rem;
+    }
+
+    &__right {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
