@@ -1,5 +1,4 @@
 function NextVideoCard({ video, index, setSelectedIndex }) {
-  // console.log("card ", setSelectedIndex);
   return (
     <div onClick={() => setSelectedIndex(index)} className="next-video__card">
       <div className="next-video__image-container">

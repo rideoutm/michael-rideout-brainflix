@@ -5,7 +5,6 @@ import heartIcon from "../../Assets/Icons/likes.svg";
 
 import HeroVideo from "../HeroVideo/HeroVideo";
 import AddComment from "../AddComment/AddComment";
-import CommentCard from "../CommentCard/CommentCard";
 import NextVideoList from "../NextVideoList/NextVideoList";
 import CommentCardContainer from "../CommentCardContainer/CommentCardContainer";
 

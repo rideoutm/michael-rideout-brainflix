@@ -46,16 +46,6 @@ function Header() {
           </div>
         </form>
       </header>
-      {/* <div className="main-section">
-        <div className="main-section__left">
-          <MainVideo />
-          <AddComment />
-          <CommentCard />
-        </div>
-        <div className="main-section__right">
-          <NextVideo />
-        </div>
-      </div> */}
     </>
   );
 }

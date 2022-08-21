@@ -13,7 +13,3 @@ function App() {
 }
 
 export default App;
-
-// import AddComment from "./components/AddComment/AddComment";
-// import CommentCard from "./components/CommentCard/CommentCard";
-// import NextVideo from "./components/NextVideo/NextVideo";

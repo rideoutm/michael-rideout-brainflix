@@ -1,9 +1,7 @@
-// import videos from "../../Data/videos.json";
 import "./nextVideoList.scss";
 import NextVideoCard from "../NextVideoCard/NextVideoCard";
 
 function NextVideoList({ videos, selectedIndex, setSelectedIndex }) {
-  // console.log("list ", setSelectedIndex);
   return (
     <>
       <section className="next-video">

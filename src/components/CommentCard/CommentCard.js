@@ -30,5 +30,3 @@ function CommentCard({ comment }) {
 }
 
 export default CommentCard;
-
-// {comment, key} and then pass key={key} to outer div
