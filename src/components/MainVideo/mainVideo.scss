@@ -9,25 +9,29 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 90%;
+    background: $BrainFlix-DarkBlack;
+    // max-height: 400px;
   }
 
   &__video-control {
     width: 100%;
+    aspect-ratio: 16 / 9;
   }
 
   @include tablet {
     &__container {
       width: 100%;
-      background: $BrainFlix-DarkBlack;
     }
 
     &__video-control {
-      width: 90%;
+      width: 87%;
     }
   }
 
   @include desktop {
+    &__container {
+      width: 100%;
+    }
     &__video-control {
       width: 70%;
     }
