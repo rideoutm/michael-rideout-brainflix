@@ -1,6 +1,7 @@
 import "./nextVideoList.scss";
 import NextVideoCard from "../NextVideoCard/NextVideoCard";
 
+// Parent component for next vid cards, Iterate through next vid list
 function NextVideoList({ videos, selectedIndex, setSelectedIndex }) {
   return (
     <>

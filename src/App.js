@@ -7,6 +7,8 @@ function App() {
   return (
     <>
       <Header />
+
+      {/* Parent Container of AddComment, CommentCardContainer, NextVideoList */}
       <MainVideo />
     </>
   );

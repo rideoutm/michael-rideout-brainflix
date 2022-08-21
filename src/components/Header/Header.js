@@ -3,6 +3,7 @@ import loginAvatar from "../../Assets/Images/Mohan-muruge.jpg";
 
 import "./header.scss";
 
+// Header & Search
 function Header() {
   return (
     <>

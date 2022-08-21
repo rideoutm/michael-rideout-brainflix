@@ -1,3 +1,4 @@
+// Build card for each vid in next vid list
 function NextVideoCard({ video, index, setSelectedIndex }) {
   return (
     <div onClick={() => setSelectedIndex(index)} className="next-video__card">

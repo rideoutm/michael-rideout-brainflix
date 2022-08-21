@@ -1,6 +1,7 @@
 import userImage from "../../Assets/Images/Mohan-muruge.jpg";
 import "./addComment.scss";
 
+// Add comment section
 function AddComment({ commentsArrayLength }) {
   return (
     <section className="comments">

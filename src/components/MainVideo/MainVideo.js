@@ -10,6 +10,7 @@ import CommentCardContainer from "../CommentCardContainer/CommentCardContainer";
 
 import { useState } from "react";
 
+// Hero vid, main vid details, parent component for AddComments, CommentCardContainer, NextVistList
 function MainVideo() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
