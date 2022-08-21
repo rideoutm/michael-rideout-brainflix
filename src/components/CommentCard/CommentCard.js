@@ -2,11 +2,11 @@ import placeHolder from "../../Assets/Images/placeholder.png";
 // import videoDetails from "../../Data/video-details.json";
 import "./commentCard.scss";
 
-function CommentCard({ comment, key }) {
-  console.log("comment Card: ", comment, key);
+function CommentCard({ comment }) {
+  // console.log("comment Card: ", comment, key);
   return (
     <>
-      <div key={key} className="comments-archieve__outer">
+      <div className="comments-archieve__outer">
         <hr className="comments-archieve__hr" />
         <div className="comments-archieve__comment">
           <img className="comments-archieve__icon" src={placeHolder} />
@@ -30,3 +30,5 @@ function CommentCard({ comment, key }) {
 }
 
 export default CommentCard;
+
+// {comment, key} and then pass key={key} to outer div

@@ -59,8 +59,7 @@
 
   @include desktop {
     border-left: 2px solid $Mercury;
-    height: 100vh;
-    &__top-divider {
+    height: 100% &__top-divider {
       display: none;
     }
   }

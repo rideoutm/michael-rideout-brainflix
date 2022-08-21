@@ -14,7 +14,7 @@ function AddComment() {
           alt="user image"
         />
 
-        <form className="comments__form-container" action="URL" method="POST">
+        <form className="comments__form-container" action="URL" method="#">
           <div className="comments__input-wrapper">
             <label className="comments__form-label" htmlFor="comments">
               JOIN THE CONVERSATION
@@ -31,7 +31,6 @@ function AddComment() {
               type="submit"
               className="comments__submit-btn"
               value="COMMENT"
-              maxlength="40"
             />
           </div>
         </form>

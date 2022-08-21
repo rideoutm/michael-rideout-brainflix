@@ -8,7 +8,7 @@ function Header() {
     <>
       <header className="header">
         <div className="header__logo-container">
-          <a href="#root">
+          <a href="./index.html">
             <img
               className="header__logo"
               src={BrainFlixlogo}

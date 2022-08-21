@@ -1,7 +1,7 @@
 import CommentCard from "../CommentCard/CommentCard";
 
 function CommentCardContainer({ commentsArray }) {
-  console.log(commentsArray);
+  //   console.log(commentsArray);
   return (
     <section className="comments-archieve">
       {commentsArray.map((el) => {

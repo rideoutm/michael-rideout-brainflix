@@ -13,16 +13,9 @@ import { useState } from "react";
 
 function MainVideo() {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  console.log(JSON.stringify(videoDetails));
   return (
     <>
-      {/* <HeroVideo
-        // selectedVideo={videoDetails[selectedIndex]}
-        // selectedInfo={[videoDetails[selectedIndex]]}
-
-        selectedVideo={selectedIndex}
-        setSelectedIndex={setSelectedIndex}
-      /> */}
+      <HeroVideo selectedIndex={videoDetails[selectedIndex]} />
 
       <div className="main-section">
         <div className="main-section__left">
@@ -76,11 +69,6 @@ function MainVideo() {
           <CommentCardContainer
             commentsArray={videoDetails[selectedIndex].comments}
           />
-
-          {/* <CommentCard
-            videoDetails={videoDetails}
-            selectedIndex={selectedIndex}
-          /> */}
         </div>
         <div className="main-section__right">
           <NextVideoList

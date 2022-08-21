@@ -160,4 +160,11 @@
     //   display: none;
     // }
   }
+
+  @include desktop {
+    width: 93%;
+    &__search-input {
+      width: 55%;
+    }
+  }
 }
