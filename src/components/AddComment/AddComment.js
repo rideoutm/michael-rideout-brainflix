@@ -1,11 +1,11 @@
 import userImage from "../../Assets/Images/Mohan-muruge.jpg";
 import "./addComment.scss";
 
-function AddComment() {
+function AddComment({ commentsArrayLength }) {
   return (
     <section className="comments">
       <div className="comments__counter">
-        <h4>3 Comments</h4>
+        <h4>{commentsArrayLength.length} comments</h4>
       </div>
       <div className="comments__main-container">
         <img

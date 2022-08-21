@@ -64,7 +64,9 @@ function MainVideo() {
             </div>
           </div>
 
-          <AddComment />
+          <AddComment
+            commentsArrayLength={videoDetails[selectedIndex].comments}
+          />
 
           <CommentCardContainer
             commentsArray={videoDetails[selectedIndex].comments}
