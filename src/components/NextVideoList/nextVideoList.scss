@@ -21,6 +21,11 @@
     height: 5rem;
     max-width: 20rem;
     margin: 1rem 0;
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
   }
 
   &__info {
