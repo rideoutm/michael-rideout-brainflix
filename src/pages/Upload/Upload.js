@@ -4,6 +4,10 @@ import HomePage from "../HomePage/HomePage";
 import bikeImage from "../../Assets/Images/Upload-video-preview.jpg";
 
 function Upload() {
+  const btnClick = (e) => {
+    e.preventDefault();
+    alert("Video successfully uploaded!");
+  };
   return (
     <div className="Upload__container">
       <hr className="Upload__divider" />
@@ -44,7 +48,9 @@ function Upload() {
       <hr className="Upload__divider-bottom" />
       <div className="Upload__btn-container">
         <div className="Upload__publish-container">
-          <button className="Upload__publish">PUBLISH</button>
+          <button onClick={btnClick} className="Upload__publish">
+            PUBLISH
+          </button>
         </div>
         <div className="Upload__cancel-container">
           <Link to="/" element={HomePage}>
