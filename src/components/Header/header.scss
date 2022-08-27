@@ -79,6 +79,10 @@
   &__btn-container {
     width: 100vw;
   }
+
+  &__btn-link {
+    text-decoration: none;
+  }
   &__btn {
     display: flex;
     justify-content: center;

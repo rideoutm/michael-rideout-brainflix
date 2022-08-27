@@ -1,6 +1,6 @@
 import BrainFlixlogo from "../../Assets/Logo/BrainFlix-logo.svg";
 import loginAvatar from "../../Assets/Images/Mohan-muruge.jpg";
-
+import { Link } from "react-router-dom";
 import "./header.scss";
 
 // Header & Search
@@ -9,7 +9,7 @@ function Header() {
     <>
       <header className="header">
         <div className="header__logo-container">
-          <a href="./index.html">
+          <a href="/">
             <img
               className="header__logo"
               src={BrainFlixlogo}
@@ -36,7 +36,9 @@ function Header() {
             </div>
           </div>
           <div className="header_btn-container">
-            <button className="header__btn">UPLOAD</button>
+            <Link to="/Upload" className="header__btn-link">
+              <button className="header__btn">UPLOAD</button>
+            </Link>
           </div>
           <div>
             <img

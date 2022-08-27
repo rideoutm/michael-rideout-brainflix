@@ -58,6 +58,11 @@
     height: 100%;
   }
 
+  &__link-container {
+    text-decoration: none;
+    color: $BrainFlix-Black;
+  }
+
   @include tablet {
     padding: 0 2rem;
   }

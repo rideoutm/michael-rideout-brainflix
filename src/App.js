@@ -1,15 +1,23 @@
 import Header from "./components/Header/Header";
-import MainVideo from "./components/MainVideo/MainVideo";
+import HomePage from "./pages/HomePage/HomePage";
+import Upload from "./pages/Upload/Upload";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.scss";
+import MainVideo from "./components/MainVideo/MainVideo";
 
 function App() {
   return (
     <>
-      <Header />
-
-      {/* Parent Container of AddComment, CommentCardContainer, NextVideoList */}
-      <MainVideo />
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Upload" element={<Upload />} />
+          <Route path="videos/:videoId" element={<MainVideo />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

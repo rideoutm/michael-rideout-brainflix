@@ -15,7 +15,7 @@ function AddComment({ commentsArrayLength }) {
           alt="user image"
         />
 
-        <form className="comments__form-container" action="URL" method="#">
+        <form className="comments__form-container" action="" method="#">
           <div className="comments__input-wrapper">
             <label className="comments__form-label" htmlFor="comments">
               JOIN THE CONVERSATION
