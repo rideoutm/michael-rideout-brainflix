@@ -1,5 +1,4 @@
 import placeHolder from "../../Assets/Images/placeholder.png";
-// import videoDetails from "../../Data/video-details.json";
 import "./commentCard.scss";
 
 function CommentCard({ comment }) {

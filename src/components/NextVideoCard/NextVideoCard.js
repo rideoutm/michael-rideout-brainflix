@@ -13,5 +13,3 @@ function NextVideoCard({ content }) {
 }
 
 export default NextVideoCard;
-
-// <div onClick={() => setSelectedIndex(index)} className="next-video__card">

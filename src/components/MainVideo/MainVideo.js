@@ -1,5 +1,3 @@
-// import video from "../../Data/videos.json";
-// import videoDetails from "../../Data/video-details.json";
 import viewIcon from "../../Assets/Icons/views.svg";
 import heartIcon from "../../Assets/Icons/likes.svg";
 

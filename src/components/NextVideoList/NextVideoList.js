@@ -17,7 +17,6 @@ const NextVideoList = ({ videos, videoId }) => {
         <div className="next-video__header">NEXT VIDEOS</div>
         {checkVidId.map((video, i) => {
           return (
-            // <div className="next-video__link-container">
             <Link
               className="next-video__link-container"
               to={`/videos/${video.id}`}
@@ -25,7 +24,6 @@ const NextVideoList = ({ videos, videoId }) => {
             >
               <NextVideoCard content={video} />
             </Link>
-            // </div>
           );
         })}
       </section>
