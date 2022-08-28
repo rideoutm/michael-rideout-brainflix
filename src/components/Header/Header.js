@@ -9,13 +9,13 @@ function Header() {
     <>
       <header className="header">
         <div className="header__logo-container">
-          <a href="/">
+          <Link to="/">
             <img
               className="header__logo"
               src={BrainFlixlogo}
               alt={"BrainFlix"}
             />
-          </a>
+          </Link>
         </div>
 
         <form className="header__search-form">
