@@ -20,12 +20,14 @@ function MainVideo() {
   // NextVideoList state
   const [videos, setVideos] = useState(null);
 
+  console.log(videos);
   // Get first video
   useEffect(() => {
     const nextVideoListInfo = () => {
       axios
         .get(
-          `https://project-2-api.herokuapp.com/videos/?api_key=e58a42f3-22dc-45d6-9cc7-8dbcdb2b3dfd`
+          // `https://project-2-api.herokuapp.com/videos/?api_key=e58a42f3-22dc-45d6-9cc7-8dbcdb2b3dfd`
+          `http://localhost:8080/videos`
         )
         .then((res) => {
           const videoIdInfo = res.data[0].id;
@@ -47,7 +49,8 @@ function MainVideo() {
     const videoDetailsInfo = () => {
       axios
         .get(
-          `https://project-2-api.herokuapp.com/videos/${videoDetails}?api_key=e58a42f3-22dc-45d6-9cc7-8dbcdb2b3dfd`
+          // `https://project-2-api.herokuapp.com/videos/${videoDetails}?api_key=e58a42f3-22dc-45d6-9cc7-8dbcdb2b3dfd`
+          `http://localhost:8080/videos/${videoDetails}`
         )
         .then((res) => {
           const vidData = res.data;
