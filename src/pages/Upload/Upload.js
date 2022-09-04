@@ -117,6 +117,7 @@ function Upload() {
   const textInput = useRef();
   let navigate = useNavigate();
 
+  // listen for change in input field, remove error border.
   const changeBorderColTitle = (e) => {
     console.log(e.target);
 
@@ -128,6 +129,7 @@ function Upload() {
       textInput.current.style.borderColor = "#e1e1e1";
   };
 
+  // submit post req on click, form validation
   const btnClick = (e) => {
     e.preventDefault();
     const title = e.target.titlebox.value;
@@ -195,9 +197,7 @@ function Upload() {
       <hr className="Upload__divider-bottom" />
       <div className="Upload__btn-container">
         <div className="Upload__publish-container">
-          {/* <Link to="/UploadComp" element={UploadComplete}> */}
           <button className="Upload__publish">PUBLISH</button>
-          {/* </Link> */}
         </div>
 
         <div className="Upload__cancel-container">
