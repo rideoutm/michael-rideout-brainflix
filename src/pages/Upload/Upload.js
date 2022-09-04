@@ -2,11 +2,25 @@ import "./upload.scss";
 import { Link, useNavigate } from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import bikeImage from "../../Assets/Images/Upload-video-preview.jpg";
-import UploadComplete from "../../components/UploadComp/UploadComplete";
+import { useRef } from "react";
 import axios from "axios";
 
 function Upload() {
+  const input = useRef();
+  const textInput = useRef();
   let navigate = useNavigate();
+
+  const changeBorderColTitle = (e) => {
+    console.log(e.target);
+
+    if (e.target.value.length > 0) input.current.style.borderColor = "#e1e1e1";
+  };
+
+  const changeBorderColText = (e) => {
+    if (e.target.value.length > 0)
+      textInput.current.style.borderColor = "#e1e1e1";
+  };
+
   const btnClick = (e) => {
     e.preventDefault();
     const title = e.target.titlebox.value;
@@ -16,6 +30,10 @@ function Upload() {
       title: title,
       description: textarea,
     };
+
+    if (title === "") input.current.style.borderColor = "#D22D2D";
+    if (textarea === "") textInput.current.style.borderColor = "#D22D2D";
+    if (title === "" || textarea === "") return;
 
     axios.post("http://localhost:8080/", newVideo).then((res) => {
       if (res.status >= 200 && res.status < 300) {
@@ -43,6 +61,8 @@ function Upload() {
           </label>
           <input
             id="title-label"
+            onChange={changeBorderColTitle}
+            ref={input}
             className="Upload__video-title"
             type="text"
             placeholder="Add a title to your video"
@@ -55,6 +75,8 @@ function Upload() {
             ADD A VIDEO DESCRIPTION
           </label>
           <textarea
+            ref={textInput}
+            onChange={changeBorderColText}
             id="video-description"
             className="Upload__video-description"
             type="text"
